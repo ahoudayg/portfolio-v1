@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- main section -->
+    <section class="main" id="main">
+        <!-- nav bar-->
+        <div class="nav-bar">
+            <div class="logo">
+                <h2><a href="#main">ahoudayg</a></h2>
+            </div>
+            <div class="nav-links" id="header">
+                <ul>
+                    <li> <a href="#about" class="nav-a">About</a></li>
+                    <li> <a href="#services" class="nav-a">Services</a></li>
+                    <li> <a href="#portofolio" class="nav-a">Porjects</a></li>
+                    <li> <button class="login" id="contact" onclick="openForm()">Contact </button></li>
+                </ul>
+            </div>
+            <div class="header">
+                <button class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#main">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portofolio">Projects</a>
+            <button id="contact" onclick="openForm()">Contact </button>
+        </nav>
+        <div id="contactForm" action="https://formspree.io/f/mdojjjkq" method="POST">
+
+            <h1>contact me</h1>
+            <small>pleas entre all information</small>
+            
+            <form  class="contact-form" action="#">
+              <input placeholder="Name" type="text" name="name" required />
+              <input placeholder="Email" type="email" name="email" required />
+              <input placeholder="Subject" type="text" name="message" required />
+              <textarea placeholder="Comment" name="message"></textarea>
+              <input class="formBtn" type="submit" />
+              <input class="formBtn" type="reset" />
+              <button class="formclose" onclick="closeForm()">close</button>
+            </form>
+          </div>
+        <!-- main content -->
+        <div class="main-content">
+            <div class="img-section">
+                <div class="section-img">
+                    <img src="./asset/img/main-img.svg" alt="Illustration by Icons 8 from Ouch!">
+                </div>
+            </div>
+            <div class="main-section">
+                <div class="arow">
+                    <img src="./asset/img/Arrow1.png" alt="">
+                </div>
+                <h1>
+                    creative <br>
+                    web devloper <br>
+                    from morocco *
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!--about section-->
+
+    <section class="about-section" id="about">
+        <div class="about">
+            <h2>about me</h2>
+            <p>my name hamza ahoudayg i'm a front-ende devloper and ui.ux designer , this is my skill</p>
+            <ul>
+                <li>html</li>
+                <li>css</li>
+                <li>css</li>
+                <li>css</li>
+                <li>css</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- services section-->
+    <section class="services-section" id="services">
+        <div id="sevices-forme">
+
+            <h1>contact me</h1>
+            <small>pleas entre all information</small>
+            
+            <form  class="contact-form"  action="https://formspree.io/f/mdojjjkq" method="POST">
+              <input placeholder="Name" type="text" name="name" required />
+              <input placeholder="Email" type="email" name="email" required />
+              <select placeholder="sevices" type="text" name="message" required />
+                <option >services</option>
+                <option >web devloppment</option>
+                <option >ui/ux design</option>
+                <option >social media design design</option>
+              <input placeholder="media" type="file" name="file" required />
+              <textarea placeholder="about order" name=""></textarea>
+              <input class="formBtn" type="submit"/>
+              <input class="formBtn" type="reset"/>
+              <button class="formclose" onclick="closesevicesForm()">close</button>
+            </form>
+          </div>
+        <div class="price-content">
+            
+            <div class="price p-3">
+                <div class="p-title p-t-3">web devloppment</div>
+                <div class="p-content">
+                    <h3>200$</h3>
+                    <p><i class="fa-solid fa-check"></i> full pages</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> responsiv</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> costomized</p>
+                    <button onclick="opensevicesForm()"> get started</button>
+                </div>
+            </div>
+
+            <div class="price p-2">
+                <div class="p-title p-t-2">ui/ux design</div>
+                <div class="p-content">
+                    <h3>100$</h3>
+                    <p><i class="fa-solid fa-check"></i> full designe rsurces</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> modern designe</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> costomized</p>
+                    <button onclick="opensevicesForm()"> get started</button>
+                </div>
+            </div>
+
+            <div class="price p-3">
+                <div class="p-title p-t-3">social media design</div>
+                <div class="p-content">
+                    <h3>50$</h3>
+                    <p><i class="fa-solid fa-check"></i> logo</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> poste and video</p>
+                    <div class="lin"></div>
+                    <p><i class="fa-solid fa-check"></i> moderne</p>
+                    <button onclick="opensevicesForm()"> get started</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- portofolio section -->
+    <section class="portofolio" id="portofolio">
+        <div class="porotolio-baner">
+        </div>
+        <div class="c-s">
+            <div class="input">
+                <h2> search in my project</h2>
+                <div class="search">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="search categorie">
+                    <button onclick="myFunction()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="categorie" id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">all</button>
+                    <button class="btn" onclick="filterSelection('ui')">ui/ux</button>
+                    <button class="btn" onclick="filterSelection('front-end')">front-end</button>
+                    <button class="btn" onclick="filterSelection('designe')">designe</button>
+                </div>
+
+            </div>
+            <div class="card-section container" id="myUL">
+
+                <div class="card filterDiv front-end">
+                    <img src="./asset/project-img/portofolio.png" alt="project img">
+                    <h3>my portofolio web with HTML , CSS</h3>
+                    <button><a href="https://github.com/ahoudayg">see more</a></button>
+                </div>
+                <div class="card filterDiv designe">
+                    <img src="./asset/project-img/injaz-logo.png" alt="project img">
+                    <h3>logo for injaz School and company</h3>
+                    <button><a href="https://www.instagram.com/3ha.05/"">see more</a></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fotter-section">
+        <h2 ><a href="#main">ahoudayg</a></h2>
+        <div class="social-media">
+            <a href="https://web.facebook.com/ahoudayg.hamza/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/3ha.05/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ahoudayg" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="#ahoudayg@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </section>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
